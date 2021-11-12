@@ -37,6 +37,10 @@ header{
                             font-size: 1.6rem;
                             line-height: 2.4rem;
                             color:#ffff;
+                            transition: all .3s;
+                            &:hover{
+                                color: #503387;
+                            }
                         }
                         #icon-girar{
                             width: 1rem;

@@ -7,6 +7,9 @@ const linksSection = document.querySelectorAll('.js-nav li .js-link-section');
 linksCards.forEach(link =>{
     link.addEventListener('click', scrollToCard);
 })
+linksSection.forEach(link =>{
+    link.addEventListener('click', scrollToCard);
+})
 
 function scrollToCard(event){
     event.preventDefault();

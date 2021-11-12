@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;800&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <title>Loading page - Hostinger</title>
 </head>
@@ -21,9 +22,9 @@
                     <ul >
                         <li><a href="#home" class="js-link-section">Home</a></li>
                         <li><a href="#sobre" class="js-link-section">Sobre nós</a></li>
-                        <li><a href="#" class="js-link-section">Planos</a></li>
+                        <li><a href="#planos" class="js-link-section">Planos</a></li>
                         </li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#contato" class="js-link-section">Contato</a></li>
                     </ul>
                 </nav>
                 <div class="contato-btn">
@@ -82,9 +83,9 @@
             </div>
         </div>
     </header>
-    <section class="s-hero">
+    <section class="s-hero" id="home">
         <div class="container">
-            <div class="text">
+            <div class="text" data-aos="fade-right">
                 <span>Fácil, rápido e prático.</span>
                 <h1>Educação mais próxima doque imagina!</h1>
                 <p>Ser professor não é simplesmente entrar numa sala de aula e ministrar a aula, ser professor vai muito mais além disso.</p>
@@ -96,18 +97,18 @@
                     <span>Conheça nossos produtos</span>
                 </div>
             </div>
-            <div class="image">
+            <div class="image" data-aos="fade-left">
                 <img src="./img/ilutration-home.png" alt="">
             </div>
         </div>
     </section>
-    <section class="s-resource">
+    <section class="s-resource" id="planos">
         <div class="container">
-            <div class="top">
+            <div class="top" data-aos="fade-down">
                 <h2>Conheça as principais ofertas de nossa plataforma!</h2>
                 <p>Mais de 50 mil empresas utilizam.</p>
             </div>
-            <div class="content">  
+            <div class="content" data-aos="fade-up-left">  
                     <ul>
                         <li>
                             <a href="#acessivel">
@@ -159,41 +160,41 @@
         <div class="container">
             <div class="main-info">
                 <div class="card-primary">
-                    <div class="img">
-                        <img src="./img/ilustration-home01.png" alt="">
+                    <div class="img" >
+                        <img src="./img/ilustration-home01.png" alt="" data-aos="zoom-in">
                     </div>
                     <div class="text" id="acessivel">
-                        <h3>Conteúdo acessível</h3>
-                        <ul>
+                        <h3 data-aos="fade-down">Conteúdo acessível</h3>
+                        <ul data-aos="flip-right">
                             <li><img src="./img/icon-check1.svg" alt=""><span>Acesse de qualquer lugar que estiver.</span></li>
                             <li><img src="./img/icon-check1.svg" alt=""><span>Escolha oque deseja aprender.</span></li>
                             <li><img src="./img/icon-check1.svg" alt=""><span>Você faz seu próprio horário.</span></li>
                             <li><img src="./img/icon-check1.svg" alt=""><span>Aulas de todas as matérias com diferentes professores.</span></li>
                             <li><img src="./img/icon-check1.svg" alt=""><span>Descubra uma nova maneira de aprender.</span></li>
                         </ul>
-                        <p>Uma variedade de conteúdos de todas as matérias disponíveis, com a possibilidade de escolher aquele com melhor facilidade de compreensão para você!</p>
+                        <p data-aos="zoom-in-up">Uma variedade de conteúdos de todas as matérias disponíveis, com a possibilidade de escolher aquele com melhor facilidade de compreensão para você!</p>
                     </div>
                 </div>
                 <div class="card-secondy" id="renda">
-                    <div class="img">
-                        <img src="./img/ilustration-renda.png" alt="">
+                    <div class="img" >
+                        <img src="./img/ilustration-renda.png" alt="" data-aos="zoom-in">
                     </div>
                     <div class="text">
-                        <h3>Renda extra</h3>
-                        <ul>
+                        <h3 data-aos="fade-down">Renda extra</h3>
+                        <ul data-aos="flip-left">
                             <li><img src="./img/icon-check1.svg" alt=""><span>faciliade de acesso</span></li>
                             <li><img src="./img/icon-check1.svg" alt=""><span>faciliade de acesso</span></li>
                             <li><img src="./img/icon-check1.svg" alt=""><span>faciliade de acesso</span></li>
                             <li><img src="./img/icon-check1.svg" alt=""><span>faciliade de acesso</span></li>
                         </ul>
-                        <p>A você professor que necessita de uma ajudinha com a renda, que tal uma preparação mais adequada para o EAD junto com uma renda extra.</p>
+                        <p data-aos="zoom-in-up">A você professor que necessita de uma ajudinha com a renda, que tal uma preparação mais adequada para o EAD junto com uma renda extra.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container" id="contato">
+    <footer id="contato">
+        <div class="container">
             <div class="main-footer">
                 <div class="f-contato">
                     <h2>Contate-nos</h2>
@@ -250,5 +251,13 @@
         </div>
     </footer>
     <script src="./js/index.js" ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            disable: 'mobile', //para a animação acontecer somente uma vez
+        });
+    </script>
 </body>
 </html>
