@@ -367,9 +367,141 @@
                     }
                 }
             }
+            .card-try{
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin-bottom: 10rem;
+                .img{
+                    width: 100%;
+                    max-width: 50%;
+                    animation: floating infinite 4s;
+                }
+                .text{
+                    width: 100%;
+                    max-width: 50%;
+                    margin-right: 1rem;
+                    h3{
+                        font-size: 6rem;
+                        font-weight: 800;
+                        color: #382066;
+                    }
+                    ul{
+                        margin-top: 4rem;
+                        background-color: rgba(223, 32, 48, 0.726);
+                        padding: 2rem;
+                        border-radius: 0.8rem;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 100%;
+                        box-shadow: -10px 10px 10px #333;
+                        li{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            img{
+                                width: 4rem;
+                                height: 4rem;
+                            }
+                            span{
+                                font-size: 2rem;
+                                margin-left: 4rem;
+                            }
+                            &:not(:first-child){
+                                margin-top: 2rem;
+                            }
+                        }
+                    }
+                    p{
+                        margin-top: 2rem;
+                        text-align: justify;
+                        border-radius: 2rem;
+                        padding: 2rem;
+                        font-size: 1.8rem;
+                        background-color: #df9f20;
+                    }
+                }
+            }
         }
     }
 }
+
+
+.s-sobre{
+    padding: 7.2rem 0rem;
+    background: linear-gradient(180deg, #ffffff  0%, #B18DEE 100%);
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .text{
+            width: 100%;
+            max-width: 50%;
+            h1{
+                font-size: 3.8rem;
+                text-align: center;
+                color: var($gray-titles);
+                margin-bottom: 2.0rem;
+            }
+            p{
+                margin-bottom: 5.6rem;
+                text-align: justify;
+                width: 100%;
+                font-size: 1.8rem;
+                line-height: 150%;
+                color: var($gray-titles);
+            }
+        }
+        .image{
+            width: 100%;
+            max-width: 50%;
+            height: 49.6rem;
+            background-color: var($gray-titles);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-primary{
+            @include style-btn(5.4rem, $yellow, #503387);
+        }
+    }
+}
+// .s-sobre.container{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .s-sobre.text{
+//     width: 100%;
+//     max-width: 64rem;
+// }
+// .s-sobre.text h1{
+//     margin-bottom: 2.0rem;
+// }
+// .s-sobre.text p{
+//     margin-bottom: 5.6rem;
+//     max-width: 48.8rem;
+//     font-size: 1.8rem;
+//     line-height: 150%;
+//     color: var($gray-titles);
+// }
+// .s-sobre.text .btn-primary{
+//     padding: 1.7rem 3.7rem;
+// }
+
+// .s-sobre.image{
+//     width: 100%;
+//     max-width: 48.8rem;
+//     height: 49.6rem;
+//     background-color: var($gray-titles);
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
 
 
 @keyframes floating{
